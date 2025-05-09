@@ -58,7 +58,7 @@ export default function Home() {
             repeat={Infinity}
           />
         </h1>
-        <Card className="shadow-lg shadow-slate-200 sm:w-[500px]">
+        <Card className="shadow-lg shadow-slate-200 sm:w-[500px] sm:mb-6">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-5 my-0 py-0">
               <Image
