@@ -42,9 +42,9 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen  grid grid-cols-1 md:grid-cols-2 bg-gradient-to-b from-white via-cyan-200 to-yellow-200 ">
-      <div className="grid grid-cols-1  content-center px-5 md:px-50">
-        <h1 className="text-md md:text-xl text-center mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
+    <div className="min-h-screen  grid grid-cols-1 xl:grid-cols-2 bg-gradient-to-b from-white via-cyan-200 to-yellow-200 sm:justify-items-center sm:content-center ">
+      <div className="grid grid-cols-1  content-center px-5  lg:px-50">
+        <h1 className="text-md sm:text-[6px] sm:w-[500px]  xl:text-xl text-center mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
           <TypeAnimation
             sequence={[
               "Bienvenue sur votre espace client",
@@ -54,11 +54,11 @@ export default function Home() {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "1.5em", display: "inline-block" }}
+            style={{ fontSize: "1.3em", display: "inline-block"  }}
             repeat={Infinity}
           />
         </h1>
-        <Card className="shadow-lg shadow-slate-200">
+        <Card className="shadow-lg shadow-slate-200 sm:w-[500px]">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-5 my-0 py-0">
               <Image
@@ -67,7 +67,7 @@ export default function Home() {
                 height={30}
                 alt="Bis Connect"
               />
-              <h1 className="text-lg md:text-2xl text-center">
+              <h1 className="text-lg sm:text-[12px] xl:text-2xl text-center">
                 Bis Connect - E-Banking
               </h1>
             </CardTitle>
@@ -132,7 +132,7 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
-      <div className="hidden md:flex justify-center items-center ">
+      <div className="hidden xl:grid xl:grid-cols-1 content-center justify-items-center ">
         <Image
           src={"/assets/tamweel-new-scaled.png"}
           width={450}
