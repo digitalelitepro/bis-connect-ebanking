@@ -39,13 +39,11 @@ export default function Home() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-   
   }
 
   return (
     <div className="min-h-screen  grid grid-cols-1 md:grid-cols-2 bg-gradient-to-b from-white via-cyan-200 to-yellow-200 ">
       <div className="grid grid-cols-1  content-center px-5 md:px-50">
-       
         <h1 className="text-md md:text-xl text-center mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
           <TypeAnimation
             sequence={[
@@ -113,12 +111,23 @@ export default function Home() {
                   )}
                 />
 
-                <Button type="submit" className="py-4 text-xl tracking-wide bg-blue-950">
+                <Button
+                  type="submit"
+                  className="py-4 text-xl tracking-wide bg-blue-950"
+                >
                   Entrer
                 </Button>
               </form>
-              
-              <p className="text-sm text-center mt-7 ">Si vous n'avez pas de compte <Link href={'http://bis-bank.com/'} target="_new"> <span className="text-red-600 underline underline-offset-4">Bis Connect</span></Link> cliquez sur le lien</p>
+
+              <p className="text-sm text-center mt-7 ">
+                Demandez un accès via ce lien 👉{" "}
+                <Link href={"http://bis-bank.com/"} target="_new">
+                  {" "}
+                  <span className="text-red-600 underline underline-offset-4">
+                    Bis Connect
+                  </span>
+                </Link>{" "}
+              </p>
             </Form>
           </CardContent>
         </Card>
