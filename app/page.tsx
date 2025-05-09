@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="min-h-screen  grid grid-cols-1 xl:grid-cols-2 bg-gradient-to-b from-white via-cyan-200 to-yellow-200 sm:justify-items-center sm:content-center ">
       <div className="grid grid-cols-1  content-center px-5  lg:px-50">
-        <h1 className="text-md sm:text-[6px] sm:w-[500px]  xl:text-xl text-center mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
+        <h1 className="text-md sm:text-[6px] sm:w-[500px]  xl:text-xl text-center mb-10 sm:mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
           <TypeAnimation
             sequence={[
               "Bienvenue sur votre espace client",
