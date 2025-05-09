@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
+import { TypeAnimation } from "react-type-animation";
 import {
   Form,
   FormControl,
@@ -16,6 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(6, {
@@ -38,12 +39,27 @@ export default function Home() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+   
   }
 
   return (
     <div className="min-h-screen  grid grid-cols-1 md:grid-cols-2 bg-gradient-to-b from-white via-cyan-200 to-yellow-200 ">
-      {/* <div className="flex justify-center py-[17rem] "> */}
       <div className="grid grid-cols-1  content-center px-5 md:px-50">
+       
+        <h1 className="text-md md:text-xl text-center mb-20 font-bold bg-gradient-to-r from-red-600 to-yellow-300 bg-clip-text text-transparent">
+          <TypeAnimation
+            sequence={[
+              "Bienvenue sur votre espace client",
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              "Vous etes sur Bis Connect e-banking",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: "1.5em", display: "inline-block" }}
+            repeat={Infinity}
+          />
+        </h1>
         <Card className="shadow-lg shadow-slate-200">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-5 my-0 py-0">
@@ -97,10 +113,12 @@ export default function Home() {
                   )}
                 />
 
-                <Button type="submit" className="py-3 text-lg">
+                <Button type="submit" className="py-4 text-xl tracking-wide bg-blue-950">
                   Entrer
                 </Button>
               </form>
+              
+              <p className="text-sm text-center mt-7 ">Si vous n'avez pas de compte <Link href={'http://bis-bank.com/'} target="_new"> <span className="text-red-600 underline underline-offset-4">Bis Connect</span></Link> cliquez sur le lien</p>
             </Form>
           </CardContent>
         </Card>
