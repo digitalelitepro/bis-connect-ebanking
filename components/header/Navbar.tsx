@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='h-19 fixed inset-0 flex justify-between items-center p-2 shadow-sm shadow-slate-200/50  '>
+    <div className='h-19 fixed bg-gradient-to-b from-white to-cyan-50 inset-0 flex justify-between items-center p-2 shadow-sm shadow-slate-200/50 opacity-100  '>
       <div>
           <Image
             src='https://bis-bank.com/wp-content/uploads/2022/07/logo-bis4.svg'
