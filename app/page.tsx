@@ -67,7 +67,7 @@ export default function Home() {
                 height={30}
                 alt="Bis Connect"
               />
-              <h1 className="text-lg sm:text-[12px] xl:text-2xl text-center">
+              <h1 className="text-lg sm:text-xl xl:text-2xl text-center">
                 Bis Connect - E-Banking
               </h1>
             </CardTitle>
@@ -138,6 +138,7 @@ export default function Home() {
           width={450}
           height={250}
           alt="Logo image"
+          
         />
       </div>
     </div>
